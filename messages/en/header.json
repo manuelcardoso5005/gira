@@ -1,7 +1,18 @@
 {
-   "TopHeader":{
-        "shop":"Shop",
-        "about":"About",
-        "events":"Events"
-}
+        "TopHeader":{
+                "shop":"Shop",
+                "about":"About",
+                "events":"Events"
+        },
+        "NavHeader": {
+                "games":"Games",
+                "classification":"Classification",
+                "stats":"Statistics",
+                "news":"News",
+                "clubs":"Clubs"
+        },
+        "SearchMenu":{
+                "search":"Search",
+                "searchInputPlaceholder":"Search teams, statistics, matches..."
+        }
 }

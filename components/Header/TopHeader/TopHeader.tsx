@@ -14,7 +14,7 @@ function LinkTopHeader({ title, link }: LinkTopHeaderProps) {
   return (
     <Link 
       href={link} 
-      className="text-neutral-600 hover:text-neutral-900 transition-colors duration-200 font-medium"
+      className="font-medium transition-colors duration-200 text-neutral-600 hover:text-neutral-900"
     >
       {title}
     </Link>
@@ -30,10 +30,10 @@ export default function TopHeader() {
   ];
 
   return (
-    <header className="w-full bg-linear-to-r border-b border-neutral-200">
-      <div className=" px-4 h-9 flex items-center justify-between text-xs">
+    <header className="w-full border-b bg-linear-to-r border-neutral-200">
+      <div className="flex items-center justify-between px-4 text-xs h-9">
         {/* Links de navegação secundária */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="items-center hidden gap-6 md:flex">
           {links.map((item) => (
             <LinkTopHeader 
               key={item.link} 

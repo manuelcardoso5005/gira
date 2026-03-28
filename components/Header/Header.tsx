@@ -1,7 +1,7 @@
-import TopHeader from "./_components/TopHeader/TopHeader"
-import Navbar from "./_components/Navbar/Navbar"
-import Headnews from "./_components/Headnews/Headnews"
-import Menu from "../Menu/Menu"
+import TopHeader from "./TopHeader/TopHeader"
+import Navbar from "./Navbar/Navbar"
+import Headnews from "./Headnews/Headnews"
+import Menu from "../SideMenu/Menu/Menu"
 
 export default function HeaderContent(){
     return (
