@@ -6,11 +6,13 @@ import Menu from "../SideMenu/Menu/Menu"
 export default function HeaderContent(){
     return (
         <header className="bg-linear-to-b from-neutral-50 via-white to-neutral-50">
-            <div className="max-w-screen-2xl mx-auto">
+            <div className="mx-auto max-w-screen-2xl">
                 <TopHeader />
                 <Navbar />
-                <Headnews />
             </div>
+            <div>
+                <Headnews />
+            </div>    
         </header>
     )
 }
