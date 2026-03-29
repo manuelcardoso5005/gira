@@ -19,7 +19,7 @@ export default function HeadnewsContent({ currentIndex, direction }: any) {
             opacity: { duration: 0.2 },
           }}
           href={news[currentIndex].link}
-          className="flex items-center justify-center gap-3 cursor-pointer group min-h-[40px]"
+          className="flex items-center justify-center gap-3 cursor-pointer group min-h-10"
         >
           <span className="text-2xl">{news[currentIndex].icon}</span>
           <span className="text-sm font-bold text-gray-800 md:text-base">

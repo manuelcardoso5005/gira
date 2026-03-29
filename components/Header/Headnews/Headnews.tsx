@@ -18,7 +18,7 @@ export default function Headnews() {
   } = useHeadnews();
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-gray-200 via-gray-100 to-gray-50">
+    <div className="relative overflow-hidden bg-linear-to-r from-gray-200 via-gray-100 to-gray-50">
       <div className="relative px-4 py-4 mx-auto max-w-7xl">
         <div className="flex items-center justify-between gap-4">
           
@@ -32,10 +32,10 @@ export default function Headnews() {
         <HeadnewsDots currentIndex={currentIndex} goToSlide={goToSlide} />
       </div>
 
-      <HeadnewsProgress
+      {/*<HeadnewsProgress
         isAutoPlaying={isAutoPlaying}
         currentIndex={currentIndex}
-      />
+      />*/}
     </div>
   );
 }
