@@ -2,37 +2,37 @@ export   const news = [
     {
       id: 1,
       icon: "🛡️",
-      text: "Ao Tanaka shines as Japan edge past Scotland",
+      text: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "#"
     },
     {
       id: 2,
       icon: "⚽",
-      text: "Superb Gyokeres hat-trick fires Sweden to win",
+      text: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "#"
     },
     {
       id: 3,
       icon: "🇧🇷",
-      text: "Igor Thiago debuts for Brazil",
+      text: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "#"
     },
     {
       id: 4,
       icon: "🇮🇹",
-      text: "Tonali's Italy reach World Cup play-off final",
+      text: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "#"
     },
     {
       id: 5,
       icon: "⚽",
-      text: "Gabriel and Timber among Arsenal players to withdraw from international duty",
+      text: "consectetur adipiscing elit, sed do eiusmod.",
       link: "#"
     },
     {
       id: 6,
       icon: "🏥",
-      text: "Botman undergoes surgery on facial fracture",
+      text: "lorem ipsum dolor sit amet.",
       link: "#"
     },
   ];

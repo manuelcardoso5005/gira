@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { slideVariants } from "./animations";
-import { news } from "./const";
+import { news } from "../../../data/constNews";
 
 export default function HeadnewsContent({ currentIndex, direction }: any) {
   return (

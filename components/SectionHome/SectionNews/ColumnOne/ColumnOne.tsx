@@ -1,19 +1,20 @@
 'use client';
 import { ExternalLink, Calendar, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { itemVariants } from './util';
-import { NewsItem } from './SideNews';
+import { itemVariants } from '@/util/utilSectionNews';
+import { NewsItem } from '@/data/SideNews';
+import { useTranslations } from 'next-intl';
 
 interface ColumnOneProps {
     featuredNews: NewsItem;
 }
 
 export default function ColumnOne({ featuredNews }: ColumnOneProps) {
+    const t = useTranslations('newsHeadline');
     return (
         <motion.div
             variants={itemVariants}
-            className="flex-[3] bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
+            className="w-full md:flex-[2] lg:flex-[3] bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
         >
             <a href={featuredNews.link} className="block">
                 {/* Imagem/Banner */}
@@ -57,7 +58,7 @@ export default function ColumnOne({ featuredNews }: ColumnOneProps) {
                     </p>
 
                     <div className="flex items-center gap-2 font-semibold text-purple-600 transition-transform group-hover:translate-x-2">
-                        Read more
+                       {t('readmore')} 
                         <ExternalLink className="w-4 h-4" />
                     </div>
                 </div>

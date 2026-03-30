@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "@/i18n/routing";
 import { Menu, Search } from "lucide-react";
@@ -14,6 +14,17 @@ export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const t = useTranslations('NavHeader');
 
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsFixed(window.scrollY > 36); // altura do TopHeader
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const navLinks = [
     { href: "/jogos", label: "games" },
     { href: "/classificacao", label: "classification" },
@@ -22,8 +33,9 @@ export default function Navbar() {
     { href: "/clubes", label: "clubs" },
   ];
 
+  
   return (
-    <header className="w-full">
+    <header className={`w-full ${isFixed ? "fixed top-0 z-50 bg-white" : ""} border-b border-neutral-200`}>
       <div className="flex items-center justify-between h-16 px-4 mx-auto max-w-screen-2xl">
         {/* Logo + Menu + Links */}
         <div className="flex items-center gap-6">

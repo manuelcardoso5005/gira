@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import { news } from "./const";
+import { news } from "../../../data/constNews";
 
 export function useHeadnews() {
   const [currentIndex, setCurrentIndex] = useState(0);

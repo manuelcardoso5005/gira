@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { news } from "./const";
+import { news } from "../../../data/constNews";
 
 export default function HeadnewsDots({ currentIndex, goToSlide }: any) {
   return (

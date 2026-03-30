@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import ColumnOne from './ColumnOne';
-import ColumnTwo from './ColumnTwo';
-import ColumnThree from './ColumnThree';
-import { featuredNews, sideNews } from './SideNews';
-import { containerVariants } from './util';
+import ColumnOne from './ColumnOne/ColumnOne';
+import ColumnTwo from './ColumnTwo/ColumnTwo';
+import ColumnThree from './ColumnThree/ColumnThree';
+import { featuredNews, sideNews } from '@/data/SideNews';
+import { containerVariants } from '@/util/utilSectionNews';
 
 
 
@@ -18,7 +18,7 @@ export default function SectionNews() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap gap-4"
+          className="flex flex-wrap gap-4 md:gap-6"
         >
           {/* Coluna 1 - 60% (Notícia Principal) */}
             <ColumnOne featuredNews={featuredNews} />
