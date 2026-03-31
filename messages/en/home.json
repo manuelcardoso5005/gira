@@ -1,5 +1,12 @@
 {
     "newsHeadline":{
         "readmore":"Read more"
+    },
+    "tableHeader":{
+        "position":"Position",
+        "team":"Team",
+        "points":"Points",
+        "matches":"Matches",
+        "seeall":"See all"
     }
 }
