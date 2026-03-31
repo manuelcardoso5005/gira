@@ -1,4 +1,4 @@
-import { Team } from "./util";
+import { Team } from "@/Types/team";
 import { Trophy } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -19,8 +19,7 @@ export default function TableHome({ displayedTeams }: TableHomeProps) {
           <table className="w-full text-xs">
             <thead className="sticky top-0 bg-gray-50">
               <tr className="border-b border-gray-200">
-                <th className="px-3 py-2 font-semibold text-left text-gray-600">#</th>
-                <th className="px-3 py-2 font-semibold text-left text-gray-600">{t('team')}</th>
+                <th className="px-3 py-2 font-semibold text-left text-gray-600">{t('teams')}</th>
                 <th className="px-3 py-2 font-semibold text-center text-gray-600">{t('points')}</th>
                 <th className="px-3 py-2 font-semibold text-center text-gray-600">{t('matches')}</th>
               </tr>
@@ -32,21 +31,28 @@ export default function TableHome({ displayedTeams }: TableHomeProps) {
                   className="transition-colors border-b border-gray-100 hover:bg-purple-50/50"
                 >
                   {/* Posição */}
-                  <td className="px-3 py-2">
+                 { /*<td className="px-3 py-2">
                     <span className={`font-bold ${
                       index === 0 ? 'text-purple-600' : 'text-gray-700'
                     }`}>
                       {team.pos}
                     </span>
-                  </td>
+                  </td>*/}
 
                   {/* Logo + Nome */}
                   <td className="px-3 py-2">
                     <div className="flex items-center gap-2">
-                      <span className="text-lg">{team.logo}</span>
-                      {team.name && (
+                      <span> {team.pos}</span>
+                      <span className="text-lg">
+                        <img
+                          src={team.logo}
+                          alt={team.name}
+                          className="object-contain w-5 h-5"
+                        />
+                      </span>
+                      {team.shortName && (
                         <span className="text-xs font-medium text-gray-700 truncate">
-                          {team.name}
+                          {team.shortName}
                         </span>
                       )}
                     </div>

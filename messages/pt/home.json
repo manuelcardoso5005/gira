@@ -4,9 +4,15 @@
     },
     "tableHeader":{
         "position":"Posição",
-        "team":"Equipe",
-        "points":"Pontos",
-        "matches":"Jogos",
-        "seeall":"Ver tudo"
+        "teams":"Equipas",
+        "points":"P",
+        "matches":"J"
+    },
+    "tableFooter": {
+        "champion": "C",
+        "qualification1": "LC",
+        "qualification2": "TC",
+        "relegation": "R",
+        "seeall": "Ver tudo"
     }
 }

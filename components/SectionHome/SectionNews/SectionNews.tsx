@@ -12,7 +12,7 @@ import { containerVariants } from '@/util/utilSectionNews';
 export default function SectionNews() {
   return (
     <section className="py-12">
-      <div className="p-4 mx-auto shadow-lg bg-linear-to-r from-gray-200 via-gray-100 to-gray-50 rounded-2xl">
+      <div className="p-4 shadow-lg x-auto bg-linear-to-r from-gray-200 via-gray-100 to-gray-50 md:rounded-2xl">
 
         <motion.div
           variants={containerVariants}

@@ -1,13 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
 import { itemVariants } from '@/util/utilSectionNews';
-import { teams } from './util';
+import { teams } from '@/data/state';
 import TableHome from './TableHomeContent';
 import TableHomeFooter from './TableHomeFooter';
 
 export default function ColumnThree() {
   // Filtrar apenas as primeiras 13 equipas
-  const displayedTeams = teams.slice(0, 13);
+  const displayedTeams = teams.slice(0, 16);
 
   return (
     <motion.div

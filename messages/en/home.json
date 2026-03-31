@@ -4,9 +4,15 @@
     },
     "tableHeader":{
         "position":"Position",
-        "team":"Team",
-        "points":"Points",
-        "matches":"Matches",
-        "seeall":"See all"
+        "teams":"Teams",
+        "points":"P",
+        "matches":"M"
+    },
+    "tableFooter": {
+        "champion": "C",
+        "qualification1": "CL",
+        "qualification2": "CC",
+        "relegation": "D",
+        "seeall": "See all"
     }
 }
